@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+            <p>
+              <%= @exercise.description %>
+            </p>
+            <p>
+            	<%= @exercise.tag %>
+            </p>
+            <%= link_to 'Edit', edit_exercise_path(@exercise) %> |
+            <%= link_to 'Back', exercise_path %>
+        </div>
+    </div>
+</div>

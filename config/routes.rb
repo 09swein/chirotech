@@ -1,4 +1,6 @@
 Chirotech::Application.routes.draw do
+  resources :exercises
+
   devise_for :users
   get 'about' => 'pages#about'
 
