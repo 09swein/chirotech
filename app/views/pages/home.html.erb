@@ -1,7 +1,13 @@
+
 <div class="center hero-unit">
     <h1>Welcome! </h1>
     <p>to <%= link_to 'ChiroTech',  root_path %>
      </p>
 
-    <p> <%= link_to 'Sign up now!',  new_user_registration_path , class: "btn btn-large btn-primary" %> </p>
+    <p> <%= link_to 'Sign up now!',  new_user_registration_path , class: "btn btn-large btn-primary" %>
+
+    <% if user_signed_in? %>
+     <%= link_to "See My Exercises", exercises_path, class: "btn btn-large" %></p>
+     <% end %>
+
 </div>
