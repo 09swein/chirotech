@@ -4,6 +4,8 @@ gem 'rails', '4.0.0'
 gem 'devise'
 gem 'simple_form'
 gem "vimeo", "~> 1.5.3"
+gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
+gem "paperclip-ffmpeg"
 
 group :production do
 	gem 'pg'

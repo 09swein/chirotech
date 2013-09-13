@@ -1,6 +1,9 @@
 <%= simple_form_for(@exercise, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
 
+
+
+  <%= f.input :video, label: "Upload an video" %>
   <%= f.input :description, as: :text, input_html: { rows: "3" } %>
   <%= f.input :notes, as: :text, input_html: { rows: "7" } %>
 

@@ -29,4 +29,8 @@ Chirotech::Application.configure do
 
   #in Production, set host to actual host
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #to connect paperclip with ffmpeg
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
 end
