@@ -6,6 +6,7 @@ gem 'simple_form'
 gem "vimeo", "~> 1.5.3"
 gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 gem "paperclip-ffmpeg"
+gem "aws-sdk"
 
 group :production do
 	gem 'pg'
