@@ -4,8 +4,8 @@
 
 
   <%= f.input :video, label: "Upload a video" %>
-  <%= f.input :description, as: :text, input_html: { rows: "3" } %>
-  <%= f.input :notes, as: :text, input_html: { rows: "7" } %>
+  <%= f.input :description, as: :text, input_html: { rows: "3", maxlength: 70 } %>
+  <%= f.input :notes, as: :text, input_html: { rows: "5", maxlength: 150 } %>
 
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary" %>
