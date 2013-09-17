@@ -7,6 +7,7 @@ gem "vimeo", "~> 1.5.3"
 gem 'paperclip', "~>3.4.2"
 gem "paperclip-ffmpeg"
 gem "aws-sdk"
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
 
 group :production do
 	gem 'pg'
