@@ -3,6 +3,10 @@ class Exercise < ActiveRecord::Base
 
 #test of ffmpeg 
    has_attached_file :video, 
+   	:styles => { 
+   		:flv => { :format => 'flv' }
+   	},
+
     :processors => [:ffmpeg]
 
 end
